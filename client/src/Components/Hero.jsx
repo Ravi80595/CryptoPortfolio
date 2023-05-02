@@ -124,4 +124,5 @@ N. L. Dalmia Institute of Management Studies and Research</Text>
   )
 }
 
+
 export default Hero
