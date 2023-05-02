@@ -1,0 +1,33 @@
+.hero{
+    /* background-image: url('https://png.pngtree.com/background/20220718/original/pngtree-nft-metaverse-digital-background-picture-image_1660855.jpg'); */
+    height: 500px; 
+     /* border: 2px solid blue; */
+    width: 100vw;
+    background-color: #1e2026;
+    /* background: rgb(63,32,122);
+background: linear-gradient(90deg, rgba(63,32,122,1) 0%, rgba(103,82,157,1) 8%, rgba(131,46,204,1) 15%, rgba(111,80,198,1) 39%, rgba(98,48,193,1) 71%, rgba(149,33,226,1) 87%, rgba(151,54,224,1) 100%); */
+}
+.navbar{
+background-color: #1e2026;
+color: white;
+}
+.experience{
+    background-image: url(https://dex-bin.bnbstatic.com/new/static/images/home/build-code-bg.png);
+    height: 180px;
+}
+.Link_btns-dark{
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .Link_btns-dark::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    background: rgb(229, 249, 11);
+  }
+  .Link_btns-dark:hover::after{
+    width: 100%;
+  }
