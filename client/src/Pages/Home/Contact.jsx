@@ -64,7 +64,7 @@ import {
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                          hello@abc.com
+                          cryptorohittt@gmail.com
                         </Button>
                         <Button
                           size="md"
@@ -74,7 +74,7 @@ import {
                           color="#DCE2FF"
                           _hover={{ border: '2px solid #1C6FEB' }}
                           leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                          Karnavati, India
+                          Remote based, India raised
                         </Button>
                       </VStack>
                     </Box>
@@ -83,6 +83,7 @@ import {
                       spacing={5}
                       px={5}
                       alignItems="flex-start">
+                     <a href="">
                       <IconButton
                         aria-label="facebook"
                         variant="ghost"
@@ -90,7 +91,8 @@ import {
                         isRound={true}
                         _hover={{ bg: '#0D74FF' }}
                         icon={<MdFacebook size="28px" />}
-                      />
+                        />
+                        </a>
                       <IconButton
                         aria-label="github"
                         variant="ghost"

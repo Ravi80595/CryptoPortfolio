@@ -99,66 +99,63 @@ export default function WithSpeechBubbles() {
           spacing={{ base: 10, md: 4, lg: 10 }}>
                 <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Exceptional Quality</TestimonialHeading>
+          <TestimonialHeading>Extraordinary</TestimonialHeading>
           <TestimonialText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-            neque sed imperdiet nibh lectus feugiat nunc sem.
+          Rohit's knowledge about the crypto world is extraordinary. He is adept at vlogging and doing analysis.
           </TestimonialText>
         </TestimonialContent>
         <TestimonialAvatar
           src={
-            'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+            'https://media.licdn.com/dms/image/C4E03AQEgwAus8_o29A/profile-displayphoto-shrink_100_100/0/1620135420280?e=1688601600&v=beta&t=fRgv8VeQrOfvbQI9MMXtx6Ssp0tnWHY4NZWKra0ePD0'
           }
-          name={'Jane Cooper'}
-          title={'CEO at ABC Corporation'}
+          name={'Archit Sinha'}
+          title={'Multimedia journlist'}
         />
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Exceptional Quality</TestimonialHeading>
+          <TestimonialHeading>Sharp Mind</TestimonialHeading>
           <TestimonialText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-            neque sed imperdiet nibh lectus feugiat nunc sem.
+          I have known Rohit through my work at gDEX. He has a sharp mind and the right acumen for more...
           </TestimonialText>
         </TestimonialContent>
         <TestimonialAvatar
           src={
-            'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+            'https://media.licdn.com/dms/image/D5603AQErvFYiET4AOg/profile-displayphoto-shrink_100_100/0/1669690403491?e=1688601600&v=beta&t=0AAAo6_qwjO4NU7ASPmaeMh7VosiVHoCabdMV6fHfDk'
           }
-          name={'Jane Cooper'}
-          title={'CEO at ABC Corporation'}
+          name={'Seshasaye K'}
+          title={'ex Disney'}
         />
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Exceptional Quality</TestimonialHeading>
+          <TestimonialHeading>WazirX community</TestimonialHeading>
           <TestimonialText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-            neque sed imperdiet nibh lectus feugiat nunc sem.
+          Rohit has immensely grown WazirX community and campaigns in need of the hour. He stepped in more...
+           {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
           </TestimonialText>
         </TestimonialContent>
         <TestimonialAvatar
           src={
-            'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+            'https://media.licdn.com/dms/image/C4D03AQG_n5Ep2wPIxw/profile-displayphoto-shrink_100_100/0/1648667638808?e=1688601600&v=beta&t=JYVxnIwwrG5vgk93xkVCYJYP7Sdv9lf5U4Zfmgb2v5s'
           }
-          name={'Jane Cooper'}
-          title={'CEO at ABC Corporation'}
+          name={'Chandresh Jain'}
+          title={'Social & Comunnity at sherdum'}
         />
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Exceptional Quality</TestimonialHeading>
+          <TestimonialHeading>Resourcefull </TestimonialHeading>
           <TestimonialText>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-            neque sed imperdiet nibh lectus feugiat nunc sem.
+          I worked with Rohitt and I was astounded by his knowledge in crypto more 
           </TestimonialText>
         </TestimonialContent>
         <TestimonialAvatar
           src={
-            'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+            'https://media.licdn.com/dms/image/C5103AQEz1EHoAbXhJQ/profile-displayphoto-shrink_100_100/0/1573403982788?e=1688601600&v=beta&t=gAB49cmth79M-nH-KUD10aCS6udYFD50Vu99dJC4zWQ'
           }
-          name={'Jane Cooper'}
-          title={'CEO at ABC Corporation'}
+          name={'Dean Prasestanont'}
+          title={'Head of operation'}
         />
       </Testimonial>
       </Stack>

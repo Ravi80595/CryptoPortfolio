@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import { Box, Heading,Text,Flex,Image, Button} from '@chakra-ui/react'
+import Education from './Education'
 
 const Hero = () => {
 
@@ -10,12 +11,12 @@ return (
     <Box className='hero' pt={30}>
         <Flex>
         <Box w='55%' p={10}>
-      <Text fontSize='55px' fontWeight='bold' color='white'>Experience &  
-       <span color='yellow' style={{color:'#f0b90b'}}> Certified </span> 
-      Blockchain Expert</Text>
-      <Text color='white' w='85%'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, temporibus. elit. Aliquid, temporibus</Text>
-      <Button mt={5} _hover={{background:'yellow'}} fontSize='25px' p='35px'>Contact me</Button>
-      <Button mt={5} ml={10} border='2px solid white' fontSize='25px' background='transparent' p='35px' color='white'>Portfolio</Button>
+      <Text fontSize='55px' fontWeight='bold' color='white'>Hello, this is  
+       <span color='yellow' style={{color:'#f0b90b'}}> CryptoRohit </span> 
+      </Text>
+      <Text color='white' w='85%'>Certified Blockchain & Cryptocurrency Expert. Remote Based & India raised. Speaks web3 marketing with a finance brain.</Text>
+      <Button mt={5} _hover={{background:'#f0b90b'}} fontSize='25px' p='35px'>Contact me</Button>
+      <Button mt={5} _hover={{color:'#252424', background:'white'}} ml={10} border='2px solid white' fontSize='25px' background='transparent' p='35px' color='white'>Portfolio</Button>
         </Box>
 
         <Box>
@@ -68,7 +69,7 @@ return (
                     <Text p={5}>Helped in Evaluating, Planning, Executing and Monitoring India Strategy for YIELD App.</Text>
                 </Box>
             </Flex>
-            
+                     
                               {/* Education */}
 
             <Flex pt={10} justifyContent='space-around'>
@@ -77,6 +78,7 @@ return (
                 <Image h={300} src='https://dex-bin.bnbstatic.com/new/static/images/home/bas-bg.png'/>
             </Flex>
             <Box background='#1e2026' pt={0}>
+                   
                 <Flex justifyContent='space-around' gap='20px' p={20}>
                     <Box w='50%'>
                     <Flex>
@@ -107,6 +109,7 @@ N. L. Dalmia Institute of Management Studies and Research</Text>
                     </Flex>
                     <Text pl={10} color='white'>Engineering, Automobile / Mechanical </Text>
                     </Box>
+                    
                     <Box w='50%'>
                     {/* <Flex>
                     <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
@@ -117,6 +120,7 @@ N. L. Dalmia Institute of Management Studies and Research</Text>
                     PG Diploma in Software Development (Blockchain), Ethereum and Hyperledger Fabric</Text> */}
                     </Box>
                 </Flex>
+                <Education/> 
             </Box>
             
         </Box>
