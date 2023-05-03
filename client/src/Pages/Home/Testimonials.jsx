@@ -91,7 +91,7 @@ export default function WithSpeechBubbles() {
     <Box bg={useColorModeValue('#1e2026', '#1e2026')}>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
-          <Heading color='white'>Our Clients Speak</Heading>
+          <Heading color='white'>Testimonials</Heading>
           <Text color='white'>We have been working with clients around the world</Text>
         </Stack>
         <Stack

@@ -1,6 +1,6 @@
 import { Box,Flex,Text,Button,Image } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import './index.css'
+import '../Pages/Home/index.css'
 import {TbJewishStarFilled} from 'react-icons/tb'
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ return (
     <Box className='navbar'>
       <Flex justifyContent='space-around' pt={8}>
         <Box w='20%'>
-          <Text fontFamily='cursive' mt={-5} fontSize='40px'>Rohit</Text>
+          <Text fontFamily='cursive' mt={0} fontSize='20px'>www.cryptorohittt.com</Text>
         </Box>
         <Flex fontSize='20px' fontWeight='bold' w='40%' justifyContent='space-around'>
           <Text className='Link_btns-dark'>Home</Text>

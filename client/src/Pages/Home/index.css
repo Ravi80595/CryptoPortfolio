@@ -31,3 +31,13 @@ color: white;
   .Link_btns-dark:hover::after{
     width: 100%;
   }
+  .workBox{
+    height: 600px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .workBox:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    transition: 1s;
+}

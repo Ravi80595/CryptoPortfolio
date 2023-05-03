@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from '../Components/Hero'
+import Hero from './Hero'
 import { Box } from '@chakra-ui/react'
-import Contact from '../Components/Contact'
-import WithSpeechBubbles from '../Components/Testimonials'
-import SuperPowers from '../Components/SuperPowers'
+import Contact from './Contact'
+import WithSpeechBubbles from './Testimonials'
+import SuperPowers from './SuperPowers'
 
 const Home = () => {
 
