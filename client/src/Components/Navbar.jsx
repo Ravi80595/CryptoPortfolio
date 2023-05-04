@@ -5,6 +5,16 @@ import {TbJewishStarFilled} from 'react-icons/tb'
 
 const Navbar = () => {
   const [count,setCount]=useState(0)
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setCount(count+1)
+    setClicked(true);
+    setTimeout(() => {
+      setClicked(false);
+    }, 600);
+  };
+
 
 return (
   <>
@@ -15,11 +25,12 @@ return (
         </Box>
         <Box w='20%' pl={10}>
         <Flex w='80%' justifyContent='space-around'>
-          <Text fontSize='30px' mt='-9px' color='yellow'>
-          <TbJewishStarFilled color='yellow'/>
+          <Text className={clicked ? 'clicked' : 'nonClicked'} fontSize='30px' mt='-9px' >
+          <TbJewishStarFilled />
           </Text>
           <Text fontSize='20px' mt={-2}>{count}</Text>
-          <Button _hover={{background:'#4e76ff'}} mt={-3} background='#4e76ff' onClick={()=>setCount(count+1)}>Say GM</Button>
+          <Button background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'} mt={-3}  
+          onClick={handleClick} >Say GM</Button>
         </Flex>
         </Box>
         <Flex fontSize='20px' fontWeight='bold' w='40%' justifyContent='space-around'>

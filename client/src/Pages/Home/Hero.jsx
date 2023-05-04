@@ -2,6 +2,7 @@ import React from 'react'
 import './index.css'
 import { Box, Heading,Text,Flex,Image, Button} from '@chakra-ui/react'
 import Education from './Education'
+import Imager from '../../Images/Imager.png'
 
 const Hero = () => {
 
@@ -20,11 +21,13 @@ return (
         </Box>
 
         <Box>
-        <Image zIndex={999999999} w={550} src='https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/features-02.png'/>
+        <Image borderRadius='50%' h={450} w={460} src={Imager}
+        />
+        {/* 'https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/features-02.png' */}
         </Box>
         </Flex>
     </Box>
-        <Image mt='0px' src='https://dex-bin.bnbstatic.com/new/static/images/home/banner-bottom-bg.png'/>
+        <Image zIndex={999999} mt='0px' src='https://dex-bin.bnbstatic.com/new/static/images/home/banner-bottom-bg.png'/>
         <Box>
             <Text fontSize='55px' fontWeight='bold' textAlign='center' color='black'>About
             <span color='yellow' style={{color:'#f0b90b'}}> me </span> 

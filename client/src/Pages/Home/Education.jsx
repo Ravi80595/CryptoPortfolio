@@ -6,19 +6,30 @@ const Education = () => {
 
 return (
   <>
-    <Flex justifyContent='space-around' gap={20}>
-      <Box borderRadius='100%' border='2px solid yellow'>
-      <Image  w='50%' h='90%' src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cryptocurrency-logo-design-template-cd2275b80fff78aafcf5c4c6b74cede7_screen.jpg?ts=1647276957'/>
+  <Box background='#1e2026' color='white' pb={20}>
+      <Text textAlign='center' fontSize='30px'>My SuperPowers</Text>
+    </Box>
+    <Flex justifyContent='space-around' width='80%' m='auto' gap={20}>
+      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+      <Box className='certificateBox'>
+      <Image  w='100%' h='255px' p={3} objectFit='cover' src='https://enstinemuki.com/wp-content/uploads/2018/07/certificate.png'/>
       </Box>
-      <Box borderRadius='100%' border='2px solid yellow'>
-      <Image w='50%' h='90%' src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cryptocurrency-logo-design-template-cd2275b80fff78aafcf5c4c6b74cede7_screen.jpg?ts=1647276957'/>
+      </a>
+      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+      <Box className='certificateBox'>
+      <Image  w='100%' h='auto' p={3} objectFit='cover' src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
       </Box>
-      <Box borderRadius='100%' border='2px solid yellow'>
-      <Image w='50%' h='90%' src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cryptocurrency-logo-design-template-cd2275b80fff78aafcf5c4c6b74cede7_screen.jpg?ts=1647276957'/>
+      </a>
+      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+      <Box className='certificateBox'>
+      <Image  w='100%' h='auto' p={3} objectFit='cover' src='https://cdn.shopify.com/s/files/1/2137/1081/products/v1-eth_280x_7e700780-1d45-4984-9ed4-e63f3cafbf05.png?v=1669213683'/>
       </Box>
-      <Box borderRadius='100%' border='2px solid yellow'>
-      <Image w='50%' h='90%' src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cryptocurrency-logo-design-template-cd2275b80fff78aafcf5c4c6b74cede7_screen.jpg?ts=1647276957'/>
+      </a>
+      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+      <Box className='certificateBox' >
+      <Image  w='100%' h='auto' p={3} objectFit='cover' src='https://images.credly.com/images/579f0d59-3aaa-4779-bfc6-ec383533ce19/Badge_08003801.png'/>
       </Box>
+      </a>
     </Flex>
   {/* <Flex justifyContent='space-around'>
   <Box  className='eduBox' borderRadius={10} w={300} color='white' border='2px solid grey' background='#181a1e'>

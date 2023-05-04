@@ -3,7 +3,7 @@ import Hero from './Hero'
 import { Box } from '@chakra-ui/react'
 import Contact from './Contact'
 import WithSpeechBubbles from './Testimonials'
-import SuperPowers from './SuperPowers'
+// import SuperPowers from './SuperPowers'
 
 const Home = () => {
 
@@ -12,7 +12,7 @@ return (
     <Box>
       <Hero/>
       <WithSpeechBubbles/>
-      <SuperPowers/>
+      {/* <SuperPowers/> */}
       <Contact/>
     </Box>
   )
