@@ -81,7 +81,7 @@ color: white;
 
 
 .certificateBox{
-  border: 2px solid yellow;
+  border: 2px solid #f0b90b;
   width: 200px;
   height: 200px;
   overflow: hidden;
@@ -90,5 +90,5 @@ color: white;
 }
 .certificateBox:hover{
   transform: scale(1.2);
-  transition: 1s;
+  transition: 0.5s;
 }

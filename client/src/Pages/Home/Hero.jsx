@@ -15,7 +15,7 @@ return (
       <Text fontSize='55px' fontWeight='bold' color='white'>Hello, this is  
        <span color='yellow' style={{color:'#f0b90b'}}> CryptoRohit </span> 
       </Text>
-      <Text color='white' w='85%'>Certified Blockchain & Cryptocurrency Expert. Remote Based & India raised. Speaks web3 marketing with a finance brain.</Text>
+      <Text color='white' w='85%'>Certified Blockchain & Cryptocurrency Expert. Remote Based & India Raised. Speaks Web3 Marketing With a Finance Brain.</Text>
       <Button mt={5} _hover={{background:'#f0b90b'}} fontSize='25px' p='35px'>Contact me</Button>
       <Button mt={5} _hover={{color:'#252424', background:'white'}} ml={10} border='2px solid white' fontSize='25px' background='transparent' p='35px' color='white'>Portfolio</Button>
         </Box>
@@ -30,7 +30,7 @@ return (
         <Image zIndex={999999} mt='0px' src='https://dex-bin.bnbstatic.com/new/static/images/home/banner-bottom-bg.png'/>
         <Box>
             <Text fontSize='55px' fontWeight='bold' textAlign='center' color='black'>About
-            <span color='yellow' style={{color:'#f0b90b'}}> me </span> 
+            <span color='yellow' style={{color:'#f0b90b'}}> Me </span> 
             </Text>
             <Flex p={10} gap={20} >
                 <Image h={600} p={10} src='https://themegenix.net/wp/nerko/wp-content/uploads/2022/12/features-07.png'/>
@@ -43,7 +43,7 @@ return (
         </Box>
         <Box background='#1e2026'>
             <Image h={150} w='100%' src='https://dex-bin.bnbstatic.com/new/static/images/home/build-code-bg.png'/>
-            <Text mt={0} mb={20} fontSize='55px' fontWeight='bold' textAlign='center' color='black'>Work
+            <Text mt={0} mb={20} fontSize='55px' fontWeight='bold' textAlign='center' color='white'>Work
             <span color='yellow' style={{color:'#f0b90b'}}> Experience </span> 
             </Text>
             <Flex justifyContent='space-around'>
@@ -72,59 +72,11 @@ return (
                     <Text p={5}>Helped in Evaluating, Planning, Executing and Monitoring India Strategy for YIELD App.</Text>
                 </Box>
             </Flex>
-                     
-                              {/* Education */}
-
-            <Flex pt={10} justifyContent='space-around'>
-                <Image h={300} src='https://dex-bin.bnbstatic.com/new/static/images/home/bas-bg.png'/>
-                <Text fontSize='60px' pt={40} fontWeight='bold' color='#f0b90b'>Education</Text>
-                <Image h={300} src='https://dex-bin.bnbstatic.com/new/static/images/home/bas-bg.png'/>
-            </Flex>
-            <Box background='#1e2026' pt={0}>
-                   
-                <Flex justifyContent='space-around' gap='20px' p={20}>
-                    <Box w='50%'>
-                    <Flex>
-                    <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Text fontSize='20px' ml={3} color='white' fontWeight='bold'>International Institute of Information Technology Bangalore</Text>
-                    </Flex>
-                    <Text pl={10} color='white'>International Institute of Information Technology Bangalore
-                    PG Diploma in Software Development (Blockchain), Ethereum and Hyperledger Fabric</Text>
-                    </Box>
-                    <Box w='50%'>
-                    <Flex>
-                    <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Text fontSize='20px' ml={3} color='white' fontWeight='bold'>
-N. L. Dalmia Institute of Management Studies and Research</Text>
-                    </Flex>
-                    <Text pl={10} color='white'>Master of Business Administration - MBA, Finance </Text>
-                    </Box>
-                </Flex>
-                <Flex justifyContent='space-around' gap='20px' p={20} pt={0}>
-                    <Box w='50%'>
-                    <Flex>
-                    <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Text fontSize='20px' ml={3} color='white' fontWeight='bold'>
-                        University of Mumbai</Text>
-                    </Flex>
-                    <Text pl={10} color='white'>Engineering, Automobile / Mechanical </Text>
-                    </Box>
-                    
-                    <Box w='50%'>
-                    {/* <Flex>
-                    <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Image src='https://dex-bin.bnbstatic.com/new/static/images/home/slash.svg'/>
-                        <Text fontSize='20px' ml={3} color='white' fontWeight='bold'>International Institute of Information Technology Bangalore</Text>
-                    </Flex> */}
-                    {/* <Text pl={10} color='white'>International Institute of Information Technology Bangalore
-                    PG Diploma in Software Development (Blockchain), Ethereum and Hyperledger Fabric</Text> */}
-                    </Box>
-                </Flex>
-                <Education/> 
-            </Box>
+            <Flex pt={5} justifyContent='space-around'>
+                <Text fontSize='60px' pt={20} pb={10} fontWeight='bold' color='#f0b90b'>Education</Text>
+        </Flex>
+        <Education/> 
+            
             
         </Box>
     </>

@@ -24,12 +24,12 @@ return (
           <Text mt={0} fontSize='20px'>www.cryptorohittt.com</Text>
         </Box>
         <Box w='20%' pl={10}>
-        <Flex w='80%' justifyContent='space-around'>
-          <Text className={clicked ? 'clicked' : 'nonClicked'} fontSize='30px' mt='-9px' >
+        <Flex w='80%' justifyContent='space-around' border='2px solid white' mt='-17px' p={3}>
+          <Text className={clicked ? 'clicked' : 'nonClicked'} fontSize='30px' >
           <TbJewishStarFilled />
           </Text>
-          <Text fontSize='20px' mt={-2}>{count}</Text>
-          <Button background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'} mt={-3}  
+          <Text fontSize='20px'>{count}</Text>
+          <Button background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'}
           onClick={handleClick} >Say GM</Button>
         </Flex>
         </Box>

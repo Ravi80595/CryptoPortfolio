@@ -6,10 +6,24 @@ const Education = () => {
 
 return (
   <>
-  <Box background='#1e2026' color='white' pb={20}>
-      <Text textAlign='center' fontSize='30px'>My SuperPowers</Text>
+  <Flex justifyContent='space-around' w='80%' m='auto'>
+    <Box _hover={{mt:'-5px'}} borderRadius={20} bg='black' textAlign='center' w='300px' color='white'>
+      <Image borderTopRadius={20} h='60%' w={'100%'} src='https://www.mim-essay.com/wp-content/uploads/2021/08/mba-1170x607-1.jpeg'/>
+      <Text fontSize='20px' fontWeight='bold'>MBA</Text>
+      <Text>N. L. Dalmia Institute of Management Studies and Research</Text>
     </Box>
-    <Flex justifyContent='space-around' width='80%' m='auto' gap={20}>
+    <Box _hover={{mt:'-5px'}} borderRadius={20} bg='black' textAlign='center' w='300px' color='white'>
+      <Image borderTopRadius={20} h='60%' w={'100%'} src='https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-09/blockchain.png'/>
+      <Text fontSize='20px' fontWeight='bold'>Blockchain</Text>
+      <Text>International Institute of Information Technology Bangalore</Text>
+    </Box>
+    <Box _hover={{mt:'-5px'}} borderRadius={20} bg='black' textAlign='center' w='300px' color='white'>
+      <Image borderTopRadius={20} h='60%' w={'100%'} src='https://www.clariwell.in/resources/uploads/Technical-Highlights-and-Roles-of-Mechanical-Design-Engineers.webp'/>
+      <Text fontSize='20px' fontWeight='bold'>Mechanical</Text>
+      <Text>University of Mumbai</Text>
+    </Box>
+  </Flex>
+    <Flex justifyContent='space-around' width='80%' pt='40px' m='auto' gap={20}>
       <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
       <Box className='certificateBox'>
       <Image  w='100%' h='255px' p={3} objectFit='cover' src='https://enstinemuki.com/wp-content/uploads/2018/07/certificate.png'/>
