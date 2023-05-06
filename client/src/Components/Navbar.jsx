@@ -29,7 +29,7 @@ return (
           <TbJewishStarFilled />
           </Text>
           <Text fontSize='20px'>{count}</Text>
-          <Button background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'}
+          <Button _hover={{background:'#4e76ff'}} background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'}
           onClick={handleClick} >Say GM</Button>
         </Flex>
         </Box>

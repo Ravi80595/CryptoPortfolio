@@ -10,9 +10,6 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 
-// type TestimonialProps = {
-//   children: ReactNode;
-// };
 
 const Testimonial = ({ children }) => {
   return <Box>{children}</Box>;
@@ -92,7 +89,7 @@ export default function WithSpeechBubbles() {
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading color='white'>Testimonials</Heading>
-          <Text color='white'>We have been working with clients around the world</Text>
+          {/* <Text color='white'>We have been working with clients around the world</Text> */}
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -104,6 +101,7 @@ export default function WithSpeechBubbles() {
           Rohit's knowledge about the crypto world is extraordinary. He is adept at vlogging and doing analysis.
           </TestimonialText>
         </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
             'https://media.licdn.com/dms/image/C4E03AQEgwAus8_o29A/profile-displayphoto-shrink_100_100/0/1620135420280?e=1688601600&v=beta&t=fRgv8VeQrOfvbQI9MMXtx6Ssp0tnWHY4NZWKra0ePD0'
@@ -111,6 +109,7 @@ export default function WithSpeechBubbles() {
           name={'Archit Sinha'}
           title={'Multimedia journlist'}
         />
+        </a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
@@ -119,13 +118,14 @@ export default function WithSpeechBubbles() {
           I have known Rohit through my work at gDEX. He has a sharp mind and the right acumen for more...
           </TestimonialText>
         </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
             'https://media.licdn.com/dms/image/D5603AQErvFYiET4AOg/profile-displayphoto-shrink_100_100/0/1669690403491?e=1688601600&v=beta&t=0AAAo6_qwjO4NU7ASPmaeMh7VosiVHoCabdMV6fHfDk'
           }
           name={'Seshasaye K'}
           title={'ex Disney'}
-        />
+        /></a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
@@ -135,13 +135,14 @@ export default function WithSpeechBubbles() {
            {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
           </TestimonialText>
         </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
             'https://media.licdn.com/dms/image/C4D03AQG_n5Ep2wPIxw/profile-displayphoto-shrink_100_100/0/1648667638808?e=1688601600&v=beta&t=JYVxnIwwrG5vgk93xkVCYJYP7Sdv9lf5U4Zfmgb2v5s'
           }
           name={'Chandresh Jain'}
           title={'Social & Comunnity at sherdum'}
-        />
+        /></a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
@@ -150,13 +151,14 @@ export default function WithSpeechBubbles() {
           I worked with Rohitt and I was astounded by his knowledge in crypto more 
           </TestimonialText>
         </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
             'https://media.licdn.com/dms/image/C5103AQEz1EHoAbXhJQ/profile-displayphoto-shrink_100_100/0/1573403982788?e=1688601600&v=beta&t=gAB49cmth79M-nH-KUD10aCS6udYFD50Vu99dJC4zWQ'
           }
           name={'Dean Prasestanont'}
           title={'Head of operation'}
-        />
+        /></a>
       </Testimonial>
       </Stack>
   </Container>

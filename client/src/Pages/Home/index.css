@@ -37,7 +37,7 @@ color: white;
     width: 300px;
   }
   .workBox:hover{
-    transform: scale(1.1);
+    transform: scaleY(1.08);
     border-radius: 10px;
     transition: 1s;
 }
@@ -54,18 +54,18 @@ color: white;
 .btnclicked{
   cursor: pointer;
   transition: background-color 0.5s ease;
-  background-color:#4e76ff;
+  background-color:yellow;
 
 }
 .btnnonClicked{
   background-color: red;
 }
 .clicked {
-  color: blue;
+  color: #f0b90b;
   animation: my-animation 0.5s;
 }
 .nonClicked{
-  color: yellow;
+  color: white;
 }
 @keyframes my-animation {
   0% {
