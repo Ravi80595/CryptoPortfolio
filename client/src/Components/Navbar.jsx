@@ -20,24 +20,26 @@ return (
   <>
     <Box className='navbar'>
       <Flex pt={8} pl={10}>
-        <Box w='18%'>
-          <Text mt={0} fontSize='20px'>www.cryptorohittt.com</Text>
+        <Box w='15%'>
+          <Text mt={0} fontSize='17px'>www.cryptorohittt.com</Text>
         </Box>
-        <Box w='20%' pl={10}>
+        <Box w='25%' fontSize='17px' pl={10}>
         <Flex w='80%' justifyContent='space-around' border='2px solid white' mt='-17px' p={3}>
           <Text className={clicked ? 'clicked' : 'nonClicked'} fontSize='30px' >
           <TbJewishStarFilled />
           </Text>
-          <Text fontSize='20px'>{count}</Text>
-          <Button _hover={{background:'#4e76ff'}} background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'}
-          onClick={handleClick} >Say GM</Button>
+          <Text pt={1} fontSize='17px'>{count}</Text>
+          <Text mt='-5px' _hover={{background:'#4e76ff'}} background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'}
+          onClick={handleClick} p={2} borderRadius={10} fontSize='17px'>Say GM</Text>
         </Flex>
         </Box>
-        <Flex fontSize='20px' fontWeight='bold' w='40%' justifyContent='space-around'>
-          <Text className='Link_btns-dark'>Home</Text>
-          <Text className='Link_btns-dark'>About</Text>
-          <Text className='Link_btns-dark'>Team</Text>
-          <Text className='Link_btns-dark'>Collection</Text>
+        <Flex fontSize='17px' fontWeight='bold' w='80%' justifyContent='space-around'>
+          <Text className='Link_btns-dark'>About Me</Text>
+          <Text className='Link_btns-dark'>Work Experience</Text>
+          <Text className='Link_btns-dark'>Education</Text>
+          <Text className='Link_btns-dark'>Testimonials</Text>
+          <Text className='Link_btns-dark'>Contact Me</Text>
+          {/* <Text className='Link_btns-dark'>Testimonials</Text> */}
         </Flex>
         
       </Flex>
