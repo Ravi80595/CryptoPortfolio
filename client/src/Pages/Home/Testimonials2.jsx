@@ -76,7 +76,7 @@ const TestimonialAvatar = ({
   );
 };
 
-export default function WithSpeechBubbles() {
+export default function Testimonials2() {
   return (
     <Box bg={useColorModeValue('#1e2026', '#1e2026')}>
       <Box w='90%' m='auto' as={Stack} spacing={12}>
@@ -88,52 +88,119 @@ export default function WithSpeechBubbles() {
           spacing={{ base: 10, md: 4, lg: 10 }}>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Extraordinary</TestimonialHeading>
+          <TestimonialHeading>Dedicated</TestimonialHeading>
           <TestimonialText>
-          Rohit's knowledge about the crypto world is extraordinary. He is adept at vlogging and doing analysis.
-          </TestimonialText>
+          Rohit is a dedicated person, be it as a colleague or a friend. Extremely responsive and work more...       </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
-            'https://media.licdn.com/dms/image/C4E03AQEgwAus8_o29A/profile-displayphoto-shrink_100_100/0/1620135420280?e=1688601600&v=beta&t=fRgv8VeQrOfvbQI9MMXtx6Ssp0tnWHY4NZWKra0ePD0'
+            'https://media.licdn.com/dms/image/C5603AQE03qIhHcAZlw/profile-displayphoto-shrink_100_100/0/1607487066975?e=1689206400&v=beta&t=zSP1lBQdklBNyp9oKlREINhpE9qw0h1l_FYvgEDLAk4'
           }
-          name={'Archit Sinha'}
-          title={'Multimedia journlist'}
+          name={'Ian Tan Wei Lun'}
+          title={'Web3 | Gaming'}
         />
         </a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Sharp Mind</TestimonialHeading>
+          <TestimonialHeading>Analyzer</TestimonialHeading>
           <TestimonialText>
-          I have known Rohit through my work at gDEX. He has a sharp mind and the right acumen for more...
+          Rohit did weekly on-chain crypto analysis on bitcoin and YouTube sessions. His technical understanding more...
           </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
-            'https://media.licdn.com/dms/image/D5603AQErvFYiET4AOg/profile-displayphoto-shrink_100_100/0/1669690403491?e=1688601600&v=beta&t=0AAAo6_qwjO4NU7ASPmaeMh7VosiVHoCabdMV6fHfDk'
+            'https://media.licdn.com/dms/image/D4E03AQH8CcC9BtDRnQ/profile-displayphoto-shrink_100_100/0/1676549969809?e=1689206400&v=beta&t=25HQXAIepxHRmjIXlC2UuS6qtnlALk18daUdLmMAym0'
           }
-          name={'Seshasaye K'}
-          title={'ex Disney'}
+          name={'Ace Desai'}
+          title={'Founder Fractal Technologies Inc'}
         /></a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>WazirX community</TestimonialHeading>
+          <TestimonialHeading>Good Guy</TestimonialHeading>
           <TestimonialText>
-          Rohit has immensely grown WazirX community and campaigns in need of the hour. He stepped in more...
+          Rohit is one of India Crypto's good guys - he has deep knowledge of the sector. Rohits passion more...
            {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
           </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
           src={
-            'https://media.licdn.com/dms/image/C4D03AQG_n5Ep2wPIxw/profile-displayphoto-shrink_100_100/0/1648667638808?e=1688601600&v=beta&t=JYVxnIwwrG5vgk93xkVCYJYP7Sdv9lf5U4Zfmgb2v5s'
+            'https://media.licdn.com/dms/image/C4D03AQGmXXtU4FGZUw/profile-displayphoto-shrink_100_100/0/1658732343474?e=1689206400&v=beta&t=c9QMtzopI718YexOgzZuHZD1MaT_Gbl5u0cM3clz8Y8'
           }
-          name={'Chandresh Jain'}
-          title={'Social & Comunnity at sherdum'}
+          name={'Rajagopal Menon'}
+          title={'Builder & Holder'}
+        /></a>
+      </Testimonial>
+      <Testimonial>
+        <TestimonialContent>
+          <TestimonialHeading>Enthusiastic </TestimonialHeading>
+          <TestimonialText>
+          Coming from a non -technical background, willingness to pursue one of the most complex more...</TestimonialText>
+        </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
+        <TestimonialAvatar
+          src={
+            'https://media.licdn.com/dms/image/C4D03AQFri3pq2EccuA/profile-displayphoto-shrink_100_100/0/1516996004644?e=1689206400&v=beta&t=d_H2rXPsNJizf5CYH3myKmg0vHwfg5YC673giQMpqME'
+          }
+          name={'Niyaz Qureshi '}
+          title={'Specialist at Apisero Inc.'}
+        /></a>
+      </Testimonial>
+      </Stack>
+      <Stack
+          direction={{ base: 'column', md: 'row' }}
+          spacing={{ base: 10, md: 4, lg: 10 }}>
+      <Testimonial>
+        <TestimonialContent>
+          <TestimonialHeading>Informative</TestimonialHeading>
+          <TestimonialText>
+          This is my official recommendation for Mr.Rohit Kundliwal as a Business Consultant. I am Heading more...       </TestimonialText>
+        </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
+        <TestimonialAvatar
+          src={
+            'https://media.licdn.com/dms/image/C5103AQENGB18dwfwvQ/profile-displayphoto-shrink_100_100/0/1573196328309?e=1689206400&v=beta&t=R-SMSGqKX084k9S2s_foNOarcVo6-u8UwCf4dMqT0K8'
+          }
+          name={'Jaspal Singh kalsi'}
+          title={'GM at Bestech Group'}
+        />
+        </a>
+      </Testimonial>
+      <Testimonial>
+        <TestimonialContent>
+          <TestimonialHeading>Positive attitude</TestimonialHeading>
+          <TestimonialText>
+          Rohit has a very positive attitude towards work. He is a quick learner and he has demonstrated responsibility towards work.
+          </TestimonialText>
+        </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
+        <TestimonialAvatar
+          src={
+            'https://media.licdn.com/dms/image/C5603AQHxWijzD4xdxA/profile-displayphoto-shrink_100_100/0/1624889257059?e=1689206400&v=beta&t=yWCu3qlSXj-KV_QJqTo7i9DKNhBWDBGNDLMK4GpzJis'
+          }
+          name={'Ankit Gattani'}
+          title={'Pricipal at Dhurva'}
+        /></a>
+      </Testimonial>
+      <Testimonial>
+        <TestimonialContent>
+          <TestimonialHeading>Creative</TestimonialHeading>
+          <TestimonialText>
+          Rohit is a very creative leader. His leadership abilities coupled with his creative thinking more...
+           {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
+          </TestimonialText>
+        </TestimonialContent>
+        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
+        <TestimonialAvatar
+          src={
+            'https://media.licdn.com/dms/image/C4E03AQF__4wMSqKNHA/profile-displayphoto-shrink_100_100/0/1602159874456?e=1689206400&v=beta&t=h9BbLtfltivAp_6nSWuN5NC62OZ7OaXaX9PenkNowW0.'
+          }
+          name={'Ankit J'}
+          title={'Credit Rating'}
         /></a>
       </Testimonial>
       <Testimonial>
@@ -149,74 +216,6 @@ export default function WithSpeechBubbles() {
             'https://media.licdn.com/dms/image/C5103AQEz1EHoAbXhJQ/profile-displayphoto-shrink_100_100/0/1573403982788?e=1688601600&v=beta&t=gAB49cmth79M-nH-KUD10aCS6udYFD50Vu99dJC4zWQ'
           }
           name={'Dean Prasestanont'}
-          title={'Head of operation'}
-        /></a>
-      </Testimonial>
-      </Stack>
-      <Stack
-          direction={{ base: 'column', md: 'row' }}
-          spacing={{ base: 10, md: 4, lg: 10 }}>
-      <Testimonial>
-        <TestimonialContent>
-          <TestimonialHeading>Youtuber</TestimonialHeading>
-          <TestimonialText>
-          I worked with Rohit at WazirX. He is a crypto expert and smart YouTuber. I endorse him for his more...</TestimonialText>
-        </TestimonialContent>
-        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
-        <TestimonialAvatar
-          src={
-            'https://media.licdn.com/dms/image/C4E03AQHhaMJX9kujTA/profile-displayphoto-shrink_100_100/0/1631166217626?e=1689206400&v=beta&t=hHJl-Wg6XfkpnlA0g1RZ8EDf-G1_syYN0Yq0T8nv1NA'
-          }
-          name={'Anuj Chaudhary'}
-          title={'Ex-Bloomberg'}
-        />
-        </a>
-      </Testimonial>
-      <Testimonial>
-        <TestimonialContent>
-          <TestimonialHeading>Valuable</TestimonialHeading>
-          <TestimonialText>
-          I had the pleasure of working with Rohit on the Marketing team at WazirX and can confidently mroe...
-          </TestimonialText>
-        </TestimonialContent>
-        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
-        <TestimonialAvatar
-          src={
-            'https://media.licdn.com/dms/image/D4D03AQG0eZ-ewo5aBg/profile-displayphoto-shrink_100_100/0/1665048654134?e=1689206400&v=beta&t=0UEyfsIM0j_GaUPrMhzSja_DM_f1eWTsNb9YspkY0GM'
-          }
-          name={'Naman Sarawgi'}
-          title={'Web3 Content Marketer'}
-        /></a>
-      </Testimonial>
-      <Testimonial>
-        <TestimonialContent>
-          <TestimonialHeading>WazirX community</TestimonialHeading>
-          <TestimonialText>
-          Rohit sir is a very enthusiastic and motivated person who enjoys his work and also motivated others to carry out the work. 
-           {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
-          </TestimonialText>
-        </TestimonialContent>
-        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
-        <TestimonialAvatar
-          src={
-            'https://media.licdn.com/dms/image/C4D03AQFG5ZP7wdGHMQ/profile-displayphoto-shrink_100_100/0/1658815414328?e=1689206400&v=beta&t=ijl0Th3OSXnZKudykeNlP14KViLNo_LS5jbqeTOvtW4'
-          }
-          name={'Honey Jain'}
-          title={'NFT expert'}
-        /></a>
-      </Testimonial>
-      <Testimonial>
-        <TestimonialContent>
-          <TestimonialHeading>Reliable </TestimonialHeading>
-          <TestimonialText>
-          I had a chance to work with Rohit when he was at an exchange, I truly enjoyed working with him more...          </TestimonialText>
-        </TestimonialContent>
-        <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
-        <TestimonialAvatar
-          src={
-            'https://media.licdn.com/dms/image/C4D03AQGfLjKWPjtySQ/profile-displayphoto-shrink_100_100/0/1621775335567?e=1689206400&v=beta&t=uPLMihkthBUJnYpFQVebvsqPDqRHtN1mIgL26_uB5EM'
-          }
-          name={'Sai poorna'}
           title={'Head of operation'}
         /></a>
       </Testimonial>
