@@ -1,11 +1,12 @@
 import { Box,Flex,Text,Button,Image } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Pages/Home/index.css'
 import {TbJewishStarFilled} from 'react-icons/tb'
 
 const Navbar = () => {
   const [count,setCount]=useState(0)
   const [clicked, setClicked] = useState(false);
+ 
 
   const handleClick = () => {
     setCount(count+1)
@@ -14,6 +15,7 @@ const Navbar = () => {
       setClicked(false);
     }, 600);
   };
+
 
 
 return (

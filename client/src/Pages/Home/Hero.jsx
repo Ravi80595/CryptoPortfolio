@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.css'
 import { Box, Heading,Text,Flex,Image, Button} from '@chakra-ui/react'
 import Education from './Education'
 import Imager from '../../Images/Imager.png'
+import HeroImage from '../../Images/HeroImage.gif'
 import {BsFillArrowDownSquareFill} from 'react-icons/bs'
 import AboutMe from '../../Images/AboutMe.png'
 import Experience from './Experience'
@@ -14,9 +15,28 @@ import {BsArrowRightSquareFill} from 'react-icons/bs'
 const Hero=()=>{
     const [showMore, setShowMore] = useState(false);
     const [showComponentOne, setShowComponentOne] = useState(true);
+    const [scrollTop,setScrollTop]=useState(0)
 
+
+    const onScroll=()=>{
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight-document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) *100;
+      setScrollTop(scrolled)
+    }
+    useEffect(()=>{
+      window.addEventListener("scroll",onScroll)
+      return ()=>window.removeEventListener("scroll",onScroll)
+    })
     const handleClick = () => {
       setShowComponentOne(!showComponentOne);
+    };
+
+    const scrollToContact = () => {
+      window.scrollTo({
+        top: 200000,
+        behavior: 'smooth',
+      });
     };
 
 return (
@@ -33,20 +53,20 @@ return (
         <Flex mt={5} justifyContent='space-around'>
             <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
             <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://enstinemuki.com/wp-content/uploads/2018/07/certificate.png'/>
-            <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
-            <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
+            <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://www.iiitb.ac.in/includefiles/userfiles/images/IIITB-invert-logo.png'/>
+            <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://t3.ftcdn.net/jpg/04/70/33/84/360_F_470338475_4MS75EMuTq74dkrxKdnUCgzJICObcxil.jpg'/>
             <Image borderRadius={20} border='2px solid white' bg='black' w={100} src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
         </Flex>
         </Box>
         <Box w='40%'>
-        <Image borderRadius='50%' h={450} w={460} src={Imager}
+        <Image borderRadius='50%' h={450} w={460} src={HeroImage}
         />
         </Box>
         </Flex>
     </Box>
         <Image zIndex={999999} mt='0px' src='https://dex-bin.bnbstatic.com/new/static/images/home/banner-bottom-bg.png'/>
         <Box fontSize='30px' w="5%" pb='30px' margin='auto'>
-        <BsFillArrowDownSquareFill/>
+        <BsFillArrowDownSquareFill cursor='pointer' onClick={scrollToContact}/>
         </Box>
         <Box>
             <Text fontSize='55px' fontWeight='bold' textAlign='center' color='black'>About
