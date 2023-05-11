@@ -190,7 +190,7 @@ export default function WithSpeechBubbles() {
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>WazirX community</TestimonialHeading>
+          <TestimonialHeading>Motivated</TestimonialHeading>
           <TestimonialText>
           Rohit sir is a very enthusiastic and motivated person who enjoys his work and also motivated others to carry out the work. 
            {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}

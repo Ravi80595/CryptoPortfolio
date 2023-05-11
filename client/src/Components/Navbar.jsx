@@ -22,8 +22,8 @@ return (
   <>
     <Box className='navbar'>
       <Flex pt={8} pl={10}>
-        <Box w='15%'>
-          <Text mt={0} fontSize='17px'>www.cryptorohittt.com</Text>
+        <Box w='16%'>
+          <Text mt={0} fontSize='17px' fontWeight='bold'>www.cryptorohittt.com</Text>
         </Box>
         <Box w='25%' fontSize='17px' pl={10}>
         <Flex w='80%' justifyContent='space-around' border='2px solid white' mt='-17px' p={3}>
