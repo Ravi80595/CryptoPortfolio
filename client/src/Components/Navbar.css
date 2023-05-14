@@ -1,0 +1,44 @@
+.Laptop-view{
+    color: white;
+    /* height: 0px; */
+    position: fixed;
+    width: 100%;
+    display: inline;
+    z-index: 999;
+    background-color: #1e2026;
+}
+
+.drawer-box{
+    background-color: black;
+    color: white;
+}
+
+
+.mobileDiv{
+    display: none;
+}
+
+@media all and (min-width: 624px) and (max-width: 1040px){
+    .Laptop-view{
+        display: none;
+    }
+
+    .mobileDiv{
+        display: block;
+        position: fixed;
+    }
+
+}
+@media all and  (max-width: 624px){
+    .Laptop-view{
+        display: none;
+    }
+
+    .mobileDiv{
+        display: block;
+        position: fixed;
+        width: 90vw;
+        z-index: 999;
+    }
+
+}

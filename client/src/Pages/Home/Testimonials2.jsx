@@ -41,7 +41,7 @@ const TestimonialContent = ({ children }) => {
 
 const TestimonialHeading = ({ children }) => {
   return (
-    <Heading as={'h3'} fontSize={'xl'} color='black'>
+    <Heading as={'h3'} fontSize={'xl'} textAlign='center' color='black'>
       {children}
     </Heading>
   );
@@ -68,7 +68,7 @@ const TestimonialAvatar = ({
       <Avatar src={src} alt={name} mb={2} />
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600} color={'white'}>{name}</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('white', 'white')}>
+        <Text w={200} textAlign='center' fontSize={'sm'} color={useColorModeValue('white', 'white')}>
           {title}
         </Text>
       </Stack>
@@ -88,9 +88,9 @@ export default function Testimonials2() {
           spacing={{ base: 10, md: 4, lg: 10 }}>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Dedicated</TestimonialHeading>
+          <TestimonialHeading>Digital marketing guru</TestimonialHeading>
           <TestimonialText>
-          Rohit is a dedicated person, be it as a colleague or a friend. Extremely responsive and work more...       </TestimonialText>
+          Rohit is a digital marketing guru and is able to plan various campaigns utilising all tools available more...       </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
@@ -98,15 +98,15 @@ export default function Testimonials2() {
             'https://media.licdn.com/dms/image/C5603AQE03qIhHcAZlw/profile-displayphoto-shrink_100_100/0/1607487066975?e=1689206400&v=beta&t=zSP1lBQdklBNyp9oKlREINhpE9qw0h1l_FYvgEDLAk4'
           }
           name={'Ian Tan Wei Lun'}
-          title={'Web3 | Gaming'}
+          title={' Co-Founder of E-Sports Business'}
         />
         </a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Analyzer</TestimonialHeading>
+          <TestimonialHeading>Impeccable</TestimonialHeading>
           <TestimonialText>
-          Rohit did weekly on-chain crypto analysis on bitcoin and YouTube sessions. His technical understanding more...
+          His technical understanding about (the) crypto market and speaking skills are impeccable
           </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
@@ -115,15 +115,14 @@ export default function Testimonials2() {
             'https://media.licdn.com/dms/image/D4E03AQH8CcC9BtDRnQ/profile-displayphoto-shrink_100_100/0/1676549969809?e=1689206400&v=beta&t=25HQXAIepxHRmjIXlC2UuS6qtnlALk18daUdLmMAym0'
           }
           name={'Ace Desai'}
-          title={'Founder Fractal Technologies Inc'}
+          title={'Founder & CEO of Fractal Technologies '}
         /></a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Good Guy</TestimonialHeading>
+          <TestimonialHeading>Sincere</TestimonialHeading>
           <TestimonialText>
-          Rohit is one of India Crypto's good guys - he has deep knowledge of the sector. Rohits passion more...
-           {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
+          He has deep knowledge of the sector. Rohits passion for teaching crypto shines. Rohit is sincere more...
           </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
@@ -132,14 +131,14 @@ export default function Testimonials2() {
             'https://media.licdn.com/dms/image/C4D03AQGmXXtU4FGZUw/profile-displayphoto-shrink_100_100/0/1658732343474?e=1689206400&v=beta&t=c9QMtzopI718YexOgzZuHZD1MaT_Gbl5u0cM3clz8Y8'
           }
           name={'Rajagopal Menon'}
-          title={'Builder & Holder'}
+          title={'Vice President of WazirX '}
         /></a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
           <TestimonialHeading>Enthusiastic </TestimonialHeading>
           <TestimonialText>
-          Coming from a non -technical background, willingness to pursue one of the most complex more...</TestimonialText>
+          Rohit was always enthusiastic to complete the program. Rohit was smart as well as hard working.</TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
@@ -147,7 +146,7 @@ export default function Testimonials2() {
             'https://media.licdn.com/dms/image/C4D03AQFri3pq2EccuA/profile-displayphoto-shrink_100_100/0/1516996004644?e=1689206400&v=beta&t=d_H2rXPsNJizf5CYH3myKmg0vHwfg5YC673giQMpqME'
           }
           name={'Niyaz Qureshi '}
-          title={'Specialist at Apisero Inc.'}
+          title={'Senior Specialist at Apisero'}
         /></a>
       </Testimonial>
       </Stack>
@@ -156,9 +155,9 @@ export default function Testimonials2() {
           spacing={{ base: 10, md: 4, lg: 10 }}>
       <Testimonial>
         <TestimonialContent>
-          <TestimonialHeading>Informative</TestimonialHeading>
+          <TestimonialHeading>Consummate</TestimonialHeading>
           <TestimonialText>
-          This is my official recommendation for Mr.Rohit Kundliwal as a Business Consultant. I am Heading more...       </TestimonialText>
+          He is the consummate business consulting professional as he has in-depth knowledge of his job more...       </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
         <TestimonialAvatar
@@ -166,7 +165,7 @@ export default function Testimonials2() {
             'https://media.licdn.com/dms/image/C5103AQENGB18dwfwvQ/profile-displayphoto-shrink_100_100/0/1573196328309?e=1689206400&v=beta&t=R-SMSGqKX084k9S2s_foNOarcVo6-u8UwCf4dMqT0K8'
           }
           name={'Jaspal Singh kalsi'}
-          title={'GM at Bestech Group'}
+          title={'Senior General Manager at Bestech Group'}
         />
         </a>
       </Testimonial>
@@ -174,7 +173,7 @@ export default function Testimonials2() {
         <TestimonialContent>
           <TestimonialHeading>Positive attitude</TestimonialHeading>
           <TestimonialText>
-          Rohit has a very positive attitude towards work. He is a quick learner and he has demonstrated responsibility towards work.
+          He has a very positive attitude towards work. He is a quick learner and he has demonstrated responsibility towards work.
           </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
@@ -183,15 +182,14 @@ export default function Testimonials2() {
             'https://media.licdn.com/dms/image/C5603AQHxWijzD4xdxA/profile-displayphoto-shrink_100_100/0/1624889257059?e=1689206400&v=beta&t=yWCu3qlSXj-KV_QJqTo7i9DKNhBWDBGNDLMK4GpzJis'
           }
           name={'Ankit Gattani'}
-          title={'Pricipal at Dhurva'}
+          title={'Principal Consultant at Dhruva Advisors'}
         /></a>
       </Testimonial>
       <Testimonial>
         <TestimonialContent>
           <TestimonialHeading>Creative</TestimonialHeading>
           <TestimonialText>
-          Rohit is a very creative leader. His leadership abilities coupled with his creative thinking more...
-           {/* during the 2020 bull run and became a core part of scaling up marketing initiatives. Not just this, he proactively supported other team members, such as creating Live videos, building up campaigns, and being available. It is lucky to have a team member who helps with a positive build-up culture at all times. */}
+          His leadership abilities coupled with his creative thinking is what sets him apart from the rest more... 
           </TestimonialText>
         </TestimonialContent>
         <a href="https://www.linkedin.com/in/rohitkundliwal/details/recommendations/" target='blank'>
@@ -199,8 +197,8 @@ export default function Testimonials2() {
           src={
             'https://media.licdn.com/dms/image/C4E03AQF__4wMSqKNHA/profile-displayphoto-shrink_100_100/0/1602159874456?e=1689206400&v=beta&t=h9BbLtfltivAp_6nSWuN5NC62OZ7OaXaX9PenkNowW0.'
           }
-          name={'Ankit J'}
-          title={'Credit Rating'}
+          name={'Ankit Jhaveri'}
+          title={'Credit Rating Analyst at Deutsche Bank'}
         /></a>
       </Testimonial>
       <Testimonial>

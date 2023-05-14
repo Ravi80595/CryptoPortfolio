@@ -1,19 +1,21 @@
 .hero{
-    /* background-image: url('https://png.pngtree.com/background/20220718/original/pngtree-nft-metaverse-digital-background-picture-image_1660855.jpg'); */
-    height: 500px; 
-     /* border: 2px solid blue; */
-    width: 100vw;
     background-color: #1e2026;
-    /* background: rgb(63,32,122);
-background: linear-gradient(90deg, rgba(63,32,122,1) 0%, rgba(103,82,157,1) 8%, rgba(131,46,204,1) 15%, rgba(111,80,198,1) 39%, rgba(98,48,193,1) 71%, rgba(149,33,226,1) 87%, rgba(151,54,224,1) 100%); */
 }
-.navbar{
+.Laptop-view{
 background-color: #1e2026;
 color: white;
 }
 .experience{
     background-image: url(https://dex-bin.bnbstatic.com/new/static/images/home/build-code-bg.png);
     height: 180px;
+}
+.Logos{
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(245, 229, 8, 0.12) 0px 4px 6px, rgba(244, 248, 3, 0.17) 0px 12px 13px, rgba(250, 205, 4, 0.09) 0px -3px 5px;
+  /* filter: grayscale(100%); */
+  
 }
 .Link_btns-dark{
     cursor: pointer;
@@ -107,4 +109,68 @@ color: white;
 
 .TestimonialText {
   font-size: 18px;
+}
+
+.arrow {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(360deg);
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.arrow span {
+  display: block;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  border-right: 5px solid rgb(0, 0, 0);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+
+.certificateBox{
+  width: 80px;
+  height: 80px;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+  .certificateBox{
+    width: 150px;
+    height: 150px;
+}
+  
+
 }

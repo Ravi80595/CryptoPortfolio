@@ -1,7 +1,9 @@
 import { Box,Flex,Text,Button,Image } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import '../Pages/Home/index.css'
+import './Navbar.css'
 import {TbJewishStarFilled} from 'react-icons/tb'
+import MobNav from './MobNav'
 
 const Navbar = () => {
   const [count,setCount]=useState(0)
@@ -17,10 +19,9 @@ const Navbar = () => {
   };
 
 
-
 return (
   <>
-    <Box className='navbar'>
+    <Box className='Laptop-view'>
       <Flex pt={8} pl={10}>
         <Box w='16%'>
           <Text mt={0} fontSize='17px' fontWeight='bold'>www.cryptorohittt.com</Text>
@@ -31,8 +32,8 @@ return (
           <TbJewishStarFilled />
           </Text>
           <Text pt={1} fontSize='17px'>{count}</Text>
-          <Text mt='-5px' _hover={{background:'#4e76ff'}} background='#4e76ff' className={clicked ? 'btnclicked' : 'btnnonClicked'}
-          onClick={handleClick} p={2} borderRadius={10} fontSize='17px'>Say GM</Text>
+          <Button color='black' mt='-5px' _hover={{background:'#f0b90b',color:'black'}} background='white' className={clicked ? 'btnclicked' : 'btnnonClicked'}
+          onClick={handleClick} p={2} borderRadius={10} disabled={clicked} fontSize='17px'>Say GM</Button>
         </Flex>
         </Box>
         <Flex fontSize='17px' fontWeight='bold' w='80%' justifyContent='space-around'>
@@ -46,7 +47,9 @@ return (
         
       </Flex>
     </Box>
-   
+    <div className='mobileDiv'>
+            <MobNav />
+        </div>
     </>
   )
 }

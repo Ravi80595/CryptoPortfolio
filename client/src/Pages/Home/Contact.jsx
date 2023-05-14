@@ -28,8 +28,8 @@ import {
   
   export default function Contact() {
     return (
-      <Container bg="#1e2026" maxW="full" mt={0} centerContent overflow="hidden">
-        <Flex>
+      <Container bg="#1e2026" maxW="full" mt={0} pt={[10,10,10,0]} centerContent overflow="hidden">
+        <Flex data-aos="fade-up">
           <Box
             bg="#181a1e"
             color="white"
