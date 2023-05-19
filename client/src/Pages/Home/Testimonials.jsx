@@ -10,11 +10,11 @@ const Testimonial = ({ children }) => {
 
 const TestimonialContent = ({ children }) => {
   return (
-    <Stack style={{ height: '180px' }}
-    w={['auto','auto','auto','250px']}
+    <Stack style={{ height: '100px' }}
+    w={['auto','auto','auto','200px']}
       bg={useColorModeValue('white', '#1e2026')}
       boxShadow={'lg'}
-      p={8}
+      p='5px'
       rounded={'xl'}
       align={'center'}
       pos={'relative'}
@@ -42,7 +42,7 @@ const TestimonialContent = ({ children }) => {
 
 const TestimonialHeading = ({ children }) => {
   return (
-    <Heading as={'h3'} fontSize={'xl'} color='black'>
+    <Heading as={'h3'} fontSize={'15px'} color='black'>
       {children}
     </Heading>
   );
@@ -53,7 +53,7 @@ const TestimonialText = ({ children }) => {
     <Text
       textAlign={'center'}
       color={useColorModeValue('black', 'black')}
-      fontSize={'sm'}>
+      fontSize={'10px'}>
       {children}
     </Text>
   );
@@ -65,11 +65,11 @@ const TestimonialAvatar = ({
   title,
 }) => {
   return (
-    <Flex align={'center'} mt={8} direction={'column'}>
-      <Avatar src={src} alt={name} mb={2} />
+    <Flex align={'center'} mt={5} direction={'column'}>
+      <Avatar src={src} alt={name} mb={1} />
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600} color={'white'}>{name}</Text>
-        <Text w={200} fontSize={'sm'} textAlign='center' color={useColorModeValue('white', 'white')}>
+        <Text w={200} fontSize={'10px'} textAlign='center' color={useColorModeValue('white', 'white')}>
           {title}
         </Text>
       </Stack>
@@ -77,9 +77,10 @@ const TestimonialAvatar = ({
   );
 };
 
+
 export default function WithSpeechBubbles() {
   return (
-    <Box bg={useColorModeValue('#1e2026', '#1e2026')} data-aos="fade-up">
+    <Box bg={useColorModeValue('#1e2026', '#1e2026')}>
       <Box w='90%' m='auto' as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading pt={10} color='white'>Testimonials</Heading>

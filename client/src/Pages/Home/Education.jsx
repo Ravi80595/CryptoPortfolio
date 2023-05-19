@@ -25,22 +25,22 @@ const boxesData2=[
 
 return (
   <>
-  <Flex data-aos="fade-up" gap={10} p={[2,2,5,10]} direction={['column-reverse','column-reverse','column-reverse','row']}>
-  <Box w={['99%','99%','99%','60%']}>
-  <Flex mb={10} gap={10} overflowX='auto' maxWidth={['99%','99%','99%','99%']} p={[2,2,10,10]} >
+  <Flex gap={10} p={[2,2,5,5]} direction={['column-reverse','column-reverse','column-reverse','row']}>
+  <Box w={['99%','99%','99%','55%']}>
+  <Flex mb={5} gap={[3,3,3,10]} overflowX='auto' maxWidth={['99%','99%','99%','99%']} p={[2,2,10,5]} pt={[5,5,5,5]}>
   {boxesData && boxesData.map((boxData) => (
     <Box cursor='pointer'
       key={boxData.id}
       data={boxData}
       onClick={() => handleBoxClick(boxData)}
-      w={'300px'}
+      w={'350px'}
       borderRadius={10}
       bg='black'
             color='white'
             boxShadow='rgb(242 255 0 / 16%) 0px 10px 9px 0px, rgb(255 221 0 / 6%) 0px 0px 0px 1px'
             style={{
               transition: 'transform 0.5s, filter 0.5s',
-              transform: clickedImage === boxData.id ? 'translateY(-25px)' : 'none',
+              transform: clickedImage === boxData.id ? 'translateY(-15px)' : 'none',
       }}
     >
       <Image
@@ -48,13 +48,13 @@ return (
         filter: clickedImage === boxData.id ? 'none' : 'grayscale(100%)',
         transition: 'filter 0.5s',
       }}
-      className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={150} src={boxData.image}/>
-      <Text p={2}>{boxData.title}</Text>
-      <Text p={2} fontSize={10}>{boxData.description.length>10?boxData.description.slice(0, 150) + "...":'r'}</Text>
+      className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={100} src={boxData.image}/>
+      <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.title}</Text>
+      <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.description.length>10?boxData.description.slice(0, 100) + "...":'r'}</Text>
     </Box>
   ))}
   </Flex>
-  <Flex w='80%' m='auto'  p={[2,2,10,10]} gap={[10,10,20,20]}>
+  <Flex w='80%' m='auto' gap={[6,5,10,20]}>
   {boxesData2 && boxesData2.map((boxData) => (
     <Box cursor='pointer'
       key={boxData.id}
@@ -67,7 +67,7 @@ return (
             boxShadow='rgb(242 255 0 / 16%) 0px 10px 9px 0px, rgb(255 221 0 / 6%) 0px 0px 0px 1px'
             style={{
               transition: 'transform 0.5s, filter 0.5s',
-              transform: clickedImage === boxData.id ? 'translateY(-25px)' : 'none',
+              transform: clickedImage === boxData.id ? 'translateY(-15px)' : 'none',
             }}
     >
       <Image
@@ -75,43 +75,51 @@ return (
         filter: clickedImage === boxData.id ? 'none' : 'grayscale(100%)',
         transition: 'filter 0.5s',
       }}
-      className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={150} src={boxData.image}/>
-      <Text p={2}>{boxData.title}</Text>
-      <Text p={2} fontSize={10}>{boxData.description.length>10?boxData.description.slice(0, 150) + "...":'No Desc.'}</Text>
+      className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={100} src={boxData.image}/>
+      <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.title}</Text>
+      <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.description.length>10?boxData.description.slice(0, 100) + "...":'No Desc.'}</Text>
     </Box>
   ))}
   </Flex>
   </Box>
-  <Box border='12px ridge #f0b90b' borderRadius={10} w={['99%','99%','99%','40%']} p={5} bg='white'>
-      <Image h={400} src={selectedBox==null?'https://dex-bin.bnbstatic.com/new/static/images/home/build-code-1.png':selectedBox.image}/>
-      <Text pt={2} fontSize={20} fontWeight='bold'>{selectedBox && selectedBox.title}</Text>
-      <Text pt={2}>{selectedBox && selectedBox.description}</Text>
+  <Box h={['270px','270px','470px','470px']} maxH='470px' overflow='auto' borderRadius={10} w={['99%','99%','99%','40%']} p={5} bg='black' color='white'>
+  {
+            selectedBox==null?<Image h='400px' src='https://dex-bin.bnbstatic.com/new/static/images/home/build-code-1.png'/>:
+            <Box>
+        <Text pt={1} fontSize='15px' fontWeight='bold'>{selectedBox && selectedBox.title}</Text>
+        <Text pt={2} fontSize='13px'>{selectedBox && selectedBox.description}</Text>
+            </Box>
+          }
+      {/* <Text pt={2} fontSize={20} fontWeight='bold'>{selectedBox && selectedBox.title}</Text>
+      <Text pt={2}>{selectedBox && selectedBox.description}</Text> */}
   </Box>
 </Flex> 
-  <Flex justifyContent='space-around' width='80%' pt='40px' m='auto' gap={[3,10,10,20]}>
-      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
-      <Box className='certificateBox'>
-      <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://enstinemuki.com/wp-content/uploads/2018/07/certificate.png'/>
-      </Box>
-      </a>
-      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
-      <Box className='certificateBox'>
-      <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
-      </Box>
-      </a>
-      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
-      <Box className='certificateBox'>
-      <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://cdn.shopify.com/s/files/1/2137/1081/products/v1-eth_280x_7e700780-1d45-4984-9ed4-e63f3cafbf05.png?v=1669213683'/>
-      </Box>
-      </a>
-      <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
-      <Box className='certificateBox' >
-      <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://images.credly.com/images/579f0d59-3aaa-4779-bfc6-ec383533ce19/Badge_08003801.png'/>
-      </Box>
-      </a>
-    </Flex>
 </>
   )
 }
 
 export default Education
+{/* <Image h={400} src={selectedBox==null?'https://dex-bin.bnbstatic.com/new/static/images/home/build-code-1.png':selectedBox.image}/> */}
+
+{/* <Flex justifyContent='space-around' width='80%' pt='40px' m='auto' gap={[3,10,10,20]}>
+    <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+    <Box className='certificateBox'>
+    <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://enstinemuki.com/wp-content/uploads/2018/07/certificate.png'/>
+    </Box>
+    </a>
+    <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+    <Box className='certificateBox'>
+    <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://www.blockchainbusinessinstitute.com/wp-content/uploads/2021/02/badge.png'/>
+    </Box>
+    </a>
+    <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+    <Box className='certificateBox'>
+    <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://cdn.shopify.com/s/files/1/2137/1081/products/v1-eth_280x_7e700780-1d45-4984-9ed4-e63f3cafbf05.png?v=1669213683'/>
+    </Box>
+    </a>
+    <a href="https://www.credential.net/f4bc70c1-fe61-4e30-a7f1-4d3ba0fa0dbb#gs.vrnylh" target='blank'>
+    <Box className='certificateBox' >
+    <Image  w='100%' h='100%' p={3} objectFit='cover' src='https://images.credly.com/images/579f0d59-3aaa-4779-bfc6-ec383533ce19/Badge_08003801.png'/>
+    </Box>
+    </a>
+  </Flex> */}

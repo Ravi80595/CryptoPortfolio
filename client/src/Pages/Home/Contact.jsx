@@ -26,10 +26,11 @@ import {
   } from 'react-icons/md';
   import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
   
-  export default function Contact() {
-    return (
+export default function Contact() {
+
+return (
       <Container bg="#1e2026" maxW="full" mt={0} pt={[10,10,10,0]} centerContent overflow="hidden">
-        <Flex data-aos="fade-up">
+        <Flex>
           <Box
             bg="#181a1e"
             color="white"

@@ -26,30 +26,30 @@ const boxesData = [
 ];
 
 const boxesData2=[
-    { id: 5, image:"https://m.economictimes.com/thumb/msid-89040389,width-640,height-480,resizemode-4,imgsize-39106/header_-1.jpg", title:"Community Founder of Blockchain Noodles & MumbaiDAO",description:"As the founder of non-profit local crypto communities like Blockchain Noodles and MumbaiDAO, I have gained valuable experience in managing and growing online communities for like-minded web3 enthusiasts. With Blockchain Noodles, I help onboard new users to the crypto space and provide a platform for members to share their experiences and knowledge with others. This involves managing multiple social media channels, creating engaging content, organizing events, and facilitating discussions within the community. By doing so, I have been able to foster a supportive and collaborative environment that helps members feel confident and comfortable in navigating the complex world of cryptocurrency.Similarly, with MumbaiDAO, I have been able to create a network of professionals and enthusiasts from the financial capital of India, Mumbai. By organizing events and meetups, I have been able to connect people with similar interests and help them learn from each other. Additionally, I have been able to leverage my marketing and networking skills to promote MumbaiDAO and create partnerships with other local and international communities. Through these experiences, I have developed a strong understanding of how to build and grow communities, and how to create an environment that fosters collaboration, innovation, and learning." },
+    { id: 5, image:"https://m.economictimes.com/thumb/msid-89040389,width-640,height-480,resizemode-4,imgsize-39106/header_-1.jpg", title:"Community Founder Blockchain Noodles & MumbaiDAO",description:"As the founder of non-profit local crypto communities like Blockchain Noodles and MumbaiDAO, I have gained valuable experience in managing and growing online communities for like-minded web3 enthusiasts. With Blockchain Noodles, I help onboard new users to the crypto space and provide a platform for members to share their experiences and knowledge with others. This involves managing multiple social media channels, creating engaging content, organizing events, and facilitating discussions within the community. By doing so, I have been able to foster a supportive and collaborative environment that helps members feel confident and comfortable in navigating the complex world of cryptocurrency.Similarly, with MumbaiDAO, I have been able to create a network of professionals and enthusiasts from the financial capital of India, Mumbai. By organizing events and meetups, I have been able to connect people with similar interests and help them learn from each other. Additionally, I have been able to leverage my marketing and networking skills to promote MumbaiDAO and create partnerships with other local and international communities. Through these experiences, I have developed a strong understanding of how to build and grow communities, and how to create an environment that fosters collaboration, innovation, and learning." },
     { id: 6, image:Knight, title: "Strategic Consultant for CBRE & Knight Frank", description: "As a Strategic Consultant for top Fortune-300 organizations such as CBRE and Knight Frank, I had the privilege of working on multi-million dollar projects from around the world. I was part of the Strategic Consulting teams responsible for project management and project feasibility strategies, which involved assessing various aspects of the projects such as market dynamics, financial viability, legal and regulatory compliance, and more. The projects I worked on included airports with over 60 million footfalls, $3 billion+ metro projects, and commercial hubs with millions of square feet. The clients I worked with included industry leaders such as Hilton, Fortune, Morgan Stanley, and Blackstone. Through my experience, I developed a strong understanding of the real estate industry and the various factors that impact the success of large-scale projects.My prior experience as a Strategy and Financial Advisor at CBRE gave me the opportunity to work closely with clients to understand their needs and requirements, and provide them with customized solutions that met their specific objectives. I gained valuable insights into the workings of the real estate industry, and developed expertise in areas such as market research, financial analysis, and project management. Through my work, I honed my analytical skills and learned how to communicate complex concepts in a clear and concise manner. As a Strategic Consultant, I was able to leverage this experience and knowledge to provide high-quality advisory services to my clients, helping them to achieve their strategic goals and objectives." },
 ]
 
-
+// data-aos="fade-up"
 
 return (
     <>
-     <Flex gap={10} p={[2,2,5,10]} direction={['column-reverse','column-reverse','column-reverse','row']} data-aos="fade-up">
-        <Box w={['99%','99%','99%','60%']}>
-        <Flex mb={10} gap={5} overflowX='auto' maxWidth={['99%','99%','99%','99%']} p={[2,2,10,10]}>
+     <Flex gap={10} direction={['column-reverse','column-reverse','column-reverse','row']}>
+        <Box w={['99%','99%','99%','55%']}>
+        <Flex p={[2,2,5,5]} pt={[5,5,5,5]} mb={5} gap={5} overflowX='auto' maxWidth={['99%','99%','99%','99%']}>
         {boxesData && boxesData.map((boxData) => (
           <Box cursor='pointer'
             key={boxData.id}
             data={boxData}
             onClick={() => handleBoxClick(boxData)}
-            w={'350px'}
+            w={'250px'}
             borderRadius={10}
             bg='black'
             color='white'
             boxShadow='rgb(242 255 0 / 16%) 0px 10px 9px 0px, rgb(255 221 0 / 6%) 0px 0px 0px 1px'
             style={{
               transition: 'transform 0.5s, filter 0.5s',
-              transform: clickedImage === boxData.id ? 'translateY(-25px)' : 'none',
+              transform: clickedImage === boxData.id ? 'translateY(-15px)' : 'none',
             }}
           >
             <Image
@@ -57,26 +57,26 @@ return (
               filter: clickedImage === boxData.id ? 'none' : 'grayscale(100%)',
               transition: 'filter 0.5s',
             }}
-            className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={150} src={boxData.image}/>
-            <Text p={2}>{boxData.title}</Text>
-            <Text p={2} fontSize={10}>{boxData.description.length>10?boxData.description.slice(0, 150) + "...":'r'}</Text>
+            className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={100} src={boxData.image}/>
+            <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.title}</Text>
+            <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.description.length>10?boxData.description.slice(0, 100) + "...":'r'}</Text>
           </Box>
         ))}
         </Flex>
-        <Flex w={['99%','100%','99%','80%']} m='auto' p={10} pt={2} gap={20}>
+        <Flex w={['99%','100%','90%','90%']} m='auto' p={10} pt={2} gap={[6,5,8,20]}>
         {boxesData2 && boxesData2.map((boxData) => (
           <Box cursor='pointer'
             key={boxData.id}
             data={boxData}
             onClick={() => handleBoxClick(boxData)}
-            w={250}
+            w={'250px'}
             borderRadius={10}
             bg='black'
             color='white'
             boxShadow='rgb(242 255 0 / 16%) 0px 10px 9px 0px, rgb(255 221 0 / 6%) 0px 0px 0px 1px'
             style={{
               transition: 'transform 0.5s, filter 0.5s',
-              transform: clickedImage === boxData.id ? 'translateY(-25px)' : 'none',
+              transform: clickedImage === boxData.id ? 'translateY(-15px)' : 'none',
             }}
           >
             <Image
@@ -84,21 +84,26 @@ return (
               filter: clickedImage === boxData.id ? 'none' : 'grayscale(100%)',
               transition: 'filter 0.5s',
             }}
-            className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={150} src={boxData.image}/>
-            <Text p={2}>{boxData.title}</Text>
-            <Text p={2} fontSize={10}>{boxData.description.length>10?boxData.description.slice(0, 150) + "...":'r'}</Text>
+            className='image' filter='grayscale(100%)' borderRadius={10} borderBottomRadius={0} w='100%' h={100} src={boxData.image}/>
+            <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.title}</Text>
+            <Text p={1} fontSize={['7px','10px','15px',10]}>{boxData.description.length>10?boxData.description.slice(0, 100) + "...":'r'}</Text>
           </Box>
         ))}
         </Flex>
         </Box>
-        <Box border='12px ridge #f0b90b' borderRadius={10} w={['99%','99%','99%','40%']} p={5} bg='white'>
-            <Image h={400} src={selectedBox==null?'https://dex-bin.bnbstatic.com/new/static/images/home/build-code-1.png':selectedBox.image}/>
-            <Text pt={2} fontSize={20} fontWeight='bold'>{selectedBox && selectedBox.title}</Text>
-            <Text pt={2}>{selectedBox && selectedBox.description}</Text>
+        <Box h={['270px','270px','370px','470px']} maxH='470px' overflow='auto' borderRadius={10} bg='black' color='white' w={['99%','99%','89%','40%']} p={5} m='auto'>
+          {
+            selectedBox==null?<Image h={['270px','270px','340px','400px']} src='https://dex-bin.bnbstatic.com/new/static/images/home/build-code-1.png'/>:
+            <Box>
+        <Text pt={1} fontSize='15px' fontWeight='bold'>{selectedBox && selectedBox.title}</Text>
+        <Text pt={2} fontSize='13px'>{selectedBox && selectedBox.description}</Text>
+            </Box>
+          }
         </Box>
     </Flex> 
     </>
   )
 }
+{/* <Image h={400} src={selectedBox==null?'https://dex-bin.bnbstatic.com/new/static/images/home/build-code-1.png':selectedBox.image}/> */}
 
 export default Experience

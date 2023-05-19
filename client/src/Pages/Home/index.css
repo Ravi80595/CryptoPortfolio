@@ -64,7 +64,7 @@ color: white;
 }
 .clicked {
   color: #f0b90b;
-  animation: my-animation 0.5s;
+  /* animation: my-animation 0.5s; */
 }
 .nonClicked{
   color: white;
